@@ -1,0 +1,155 @@
+.steps-area{
+  .steps{
+    padding: 20px;
+
+    .color-blue{
+      color: #0a58ca;
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    div{
+      flex-direction: column;
+      img{
+        width: 100%!important;
+      }
+    }
+
+  }
+}
+.borderedCard {
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 10px;
+  width: 100%;
+  padding-bottom: 20px;
+
+
+  @media screen and (max-width: 600px) {
+
+    .d-flex {
+      flex-direction: column;
+
+      div {
+        width: 100% !important;
+
+        .d-flex {
+          flex-direction: row;
+        }
+      }
+
+      .pr-4 {
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
+
+.cardPage{
+  @media screen and (max-width: 600px) {
+    width: 100%!important;
+    div{
+      flex-direction: column;
+      align-items: center;
+
+      .borderedCard{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.trust-page{
+  margin: 30px auto;
+
+  .owl-carousel{
+    width: 90%;
+    margin: 40px auto;
+    position: relative;
+
+    .content-area{
+      p{
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+
+    &:hover{
+      .nav-owl-left, .nav-owl-right {
+        visibility: visible;
+        transition: 1s;
+
+      }
+    }
+
+    .nav-owl-left, .nav-owl-right{
+      position: absolute;
+      top: calc(50% - 50px);
+      padding: 10px!important;
+      width: 50px;
+      visibility: hidden;
+      border-radius: 50% !important;
+      background: #85cee5 !important;
+      border: 0!important;
+
+      &:hover{
+        background: darken(#85cee5, 10%)!important;
+      }
+    }
+
+    .nav-owl-left{
+      left: -35px
+    }
+
+    .nav-owl-right{
+      right: -35px
+    }
+
+
+    .owl-text{
+      width: 50%;
+    }
+  }
+}
+
+.question-page{
+  width: 60%;
+  margin: 30px auto;
+  .accordions{
+
+  }
+  .accordion-item{
+    border: 0;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  img{
+    padding-left: 13px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .packages{
+      flex-direction: column;
+    }
+  }
+}
+
+.package-options {
+
+  padding: 7%;
+  background: url("../../images/asset4.jpg") no-repeat;
+  font-weight: 800;
+  background-size: 100% auto;
+  height: 55vh;
+  width: 100%;
+
+  color: #FFFFFF;
+
+  @media screen and (max-width: 600px) {
+    height: auto;
+  }
+
+}

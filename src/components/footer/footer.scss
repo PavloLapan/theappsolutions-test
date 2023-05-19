@@ -1,0 +1,42 @@
+
+.footer{
+  position: relative;
+  padding: 4%;
+  background: #3a3838;
+  width: 100%;
+
+  color: #FFFFFF;
+  text-align: center;
+
+  @media screen and (max-width: 600px) {
+
+    .footer-info{
+      flex-direction: column;
+      div{
+        margin: 10px 0;
+      }
+
+      .social{
+        justify-content: space-around!important;
+        margin: 10px 0;
+      }
+    }
+
+    a{
+      padding-right: 5px;
+      font-size: 14px;
+    }
+
+    .additional-content{
+        flex-direction: column;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: 10px;
+  }
+
+}
